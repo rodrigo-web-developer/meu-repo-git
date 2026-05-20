@@ -29,7 +29,7 @@ namespace Loja.Api.Controllers
         }
 
         [HttpPut]
-        public IActionResult Create([FromBody] UpdateCategoriaDto categoria)
+        public IActionResult Update([FromBody] UpdateCategoriaDto categoria)
         {
             var sucesso = service.Editar(categoria, out var erros);
             return sucesso ? Ok(categoria) : UnprocessableEntity(erros);
