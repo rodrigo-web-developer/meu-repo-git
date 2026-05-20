@@ -11,5 +11,7 @@ namespace Loja.Core.Models
         public decimal Preco { get; set; }
         [Required]
         public Categoria Categoria { get; set; }
+
+        public int Quantidade { get; set; }
     }
 }
