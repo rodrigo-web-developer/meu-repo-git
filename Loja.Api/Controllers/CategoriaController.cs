@@ -28,6 +28,13 @@ namespace Loja.Api.Controllers
             return sucesso ? Ok(categoria) : UnprocessableEntity(erros);
         }
 
+        [HttpPut]
+        public IActionResult Update([FromBody] UpdateCategoriaDto categoria)
+        {
+            var sucesso = service.Editar(categoria, out var erros);
+            return sucesso ? Ok(categoria) : UnprocessableEntity(erros);
+        }
+
 
         [HttpGet("tela")]
         public async Task<IActionResult> Tela()
