@@ -48,6 +48,7 @@ namespace Loja.Core.Services
 
             if (registroExistente == null)
             {
+                Console.WriteLine("teste");
                 erros = new List<ValidationResult>();
                 erros.Add(new ValidationResult("Categoria não encontrada"));
                 return false;
