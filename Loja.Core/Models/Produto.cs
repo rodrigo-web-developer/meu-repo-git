@@ -2,7 +2,7 @@
 
 namespace Loja.Core.Models
 {
-    public class Produto // produtoes
+    public class Produto // produtos VERSÃO 2
     {
         public int Id { get; set; }
         [Required, StringLength(100)]
