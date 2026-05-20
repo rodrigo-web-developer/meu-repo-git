@@ -2,7 +2,7 @@
 
 namespace Loja.Core.Models
 {
-    public class Produto // produtos Versão 3 KEKW
+    public class Produto // produtos VERSÃO 3 KEKW
     {
         public int Id { get; set; }
         [Required, StringLength(100)]
